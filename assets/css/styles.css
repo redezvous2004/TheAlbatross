@@ -1,0 +1,536 @@
+* {
+    box-sizing: border-box;
+}
+:root {
+    --primary-color: #0f1b4c;
+    --actual-width: 1440px;
+    --popular-width: 1110px;
+    --line-clamp-Title: 1;
+    --line-clamp-Para: 3;
+}
+/* cỡ chữ mặc định là 16px nên 62,5%=10px */
+html {
+    font-size: 62.5%;
+}
+body {
+    /* width: var(--actual-width); */
+    margin: 0 auto;
+    font-size: 1.6rem;
+    font-family: "Poppins", sans-serif;
+}
+/* Common */
+a {
+    text-decoration: none;
+}
+.content {
+    max-width: var(--popular-width);
+    margin-left: auto;
+    margin-right: auto;
+}
+.btn {
+    display: inline-block;
+    min-width: 98px;
+    padding: 19px 16px;
+    background: var(--primary-color);
+    font-size: 1.4rem;
+    border-radius: 12px;
+    text-align: center;
+    color: #ffffff;
+}
+.btn:hover {
+    opacity: 0.8;
+}
+.link:hover {
+    text-decoration: underline;
+}
+.line-clampofTitle {
+    display: -webkit-box;
+    -webkit-line-clamp: vat(--line-clamp-Title);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.line-clampofPara {
+    display: -webkit-box;
+    -webkit-line-clamp: vat(--line-clamp-Para);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+/* ==================Header========================= */
+.header {
+    height: 736px;
+    background: #e6f0ff;
+    position: relative;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    padding-top: 38px;
+}
+.navbar ul {
+    display: flex;
+    margin-left: 50px;
+}
+.navbar .sign {
+    margin-left: auto;
+}
+.navbar .menu a {
+    font-weight: 500;
+    font-size: 1.4rem;
+    color: #4f5361;
+    padding: 8px 14px;
+}
+.navbar .sign-in {
+    font-weight: 500;
+    font-size: 1.4rem;
+    color: #0f1b4c;
+}
+.navbar .sign-up {
+    padding: 13px 16px;
+    margin-left: 18px;
+    border-radius: 8px;
+}
+.navbar .menu a:hover {
+    text-decoration: underline;
+}
+.hero .info {
+    margin-top: 130px;
+    width: 55%;
+}
+.hero .sub-title {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.5;
+    letter-spacing: 0.01em;
+    color: #687690;
+}
+.hero .title {
+    font-weight: 700;
+    font-size: 6.2rem;
+    line-height: 1.19;
+    color: #000336;
+}
+.hero .descript {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.78;
+    color: #5a6473;
+}
+.hero-btn {
+    margin-top: 40px;
+    min-width: 170px;
+    font-size: 1.3rem;
+}
+.hero img {
+    position: absolute;
+    bottom: 0;
+    right: calc((100vw - 1110px) / 2 - 100px);
+}
+/* ====================Clients==================== */
+.clients .part1 {
+    margin-top: 79px;
+    padding: 43px 0 41px;
+}
+.clients .part2 {
+    margin-top: 40px;
+    margin-bottom: 41px;
+    padding: 93px 0 79px;
+}
+.clients .general {
+    display: flex;
+    justify-content: space-between;
+}
+.clients .intro {
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 1.25;
+    color: #7d8589;
+}
+.clients .introduction {
+    margin-top: 23px;
+}
+.clients .guestlogo {
+    margin-top: 70px;
+}
+.clients .guestlogo a {
+    display: flex;
+    align-items: center;
+    height: 91px;
+    padding: 0 42px;
+    border-radius: 12px;
+}
+.clients .guestlogo a:hover {
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+.clients .working {
+    max-width: 459px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.clients .howwork {
+    position: relative;
+    font-weight: 600;
+    font-size: 3.5rem;
+    line-height: 1;
+    color: #000339;
+}
+.clients .howwork::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    border-radius: 12px;
+    width: 41px;
+    height: 4px;
+    background: #000339;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.clients .shortintro {
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.88;
+    color: #5a6473;
+}
+.clients .list-guide {
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+}
+.list-guide .guide-item {
+    margin: 0 70px;
+    text-align: center;
+}
+.list-guide .title {
+    margin-top: 26px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.1;
+    color: #3b3c45;
+}
+.link {
+    display: inline-block;
+    padding: 10px 4px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #0689ff;
+}
+.clients .clients-btn {
+    display: flex;
+    justify-content: center;
+}
+.clients .guest-button {
+    min-width: 170px;
+    margin-top: 50px;
+    font-weight: 500;
+    font-size: 1.3rem;
+    color: #ffffff;
+}
+/* ========================Features====================== */
+.features {
+    background: #f5fafe;
+    padding: 110px 0;
+}
+.features .feature-title {
+    font-weight: 600;
+    font-size: 3.5rem;
+    line-height: 1;
+    color: #000339;
+}
+.features .description {
+    display: flex;
+    justify-content: space-between;
+}
+.features .description .featdesc {
+    margin-top: 18px;
+}
+.features .description a {
+    margin-top: 20px;
+}
+.features .product {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 68px;
+}
+.features .box {
+    width: calc((var(--popular-width) - 60px) / 3);
+    min-height: 357px;
+    border-radius: 14px;
+    box-shadow: 0px 65px 80px -46px rgba(226, 238, 249, 0.6);
+    background: #ffffff;
+}
+.features .box:hover {
+    border: 1.5px solid black;
+}
+.features .box h3:hover {
+    text-decoration: underline;
+}
+.features .product .sub-title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1;
+    color: #000339;
+    margin-top: 17px;
+}
+.features .product .post {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #a3a6ab;
+    margin-top: 11px;
+}
+.features .product .dist {
+    margin-left: 20px;
+}
+.features .product .icon {
+    display: flex;
+    align-items: center;
+    margin-top: 17px;
+}
+.features .icon .fonticon {
+    padding: 0 9px 0 21px;
+}
+.features .icon .phrase {
+    font-weight: 500;
+    font-size: 1.4rem;
+    letter-spacing: 0.01em;
+    color: #4d4d52;
+}
+.features .box .mainimg {
+    width: 100%;
+}
+/* ==============================Stats================================== */
+.stats {
+    margin-top: 75px;
+    padding: 50px 0;
+}
+.stats .content {
+    width: 1017px;
+}
+.stats .rowtop {
+    display: flex;
+}
+.stats .demoimg {
+    width: 51.2%;
+    position: relative;
+}
+.stats .info {
+    width: 48.8%;
+    padding: 79px 0 0 165px;
+}
+.stats .rowtop .mainimg {
+    display: block;
+    margin-left: auto;
+    width: 400px;
+    height: 460px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+.stats .info .sub-title {
+    position: relative;
+    font-weight: 600;
+    font-size: 3.5rem;
+    line-height: 1.29;
+    color: #000339;
+    width: 269px;
+}
+.stats .info .sub-title::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: -10px;
+    width: 41px;
+    height: 4px;
+    background: #000339;
+    border-radius: 12px;
+}
+.stats .info .desc {
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.88;
+    color: #5a6473;
+    width: 309px;
+}
+.stats .stat-trend .numberanddes {
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    width: 239px;
+    border-radius: 0px 0px 12px 12px;
+    padding: 45px 22px 40px;
+    background: #fff;
+    top: 0;
+    left: 0;
+}
+.stats .numberanddes .value {
+    font-weight: 700;
+    font-size: 2.6rem;
+    letter-spacing: 0.01em;
+    color: #000339;
+}
+
+.stats .numberanddes .desc {
+    margin-top: 8px;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: #a7a7a7;
+}
+.stats .numberanddes .seperate {
+    width: 193.62px;
+    height: 1.2px;
+    background: #e9e9e9;
+    margin-top: 26px;
+}
+.stats .numberanddes .row {
+    margin-left: auto;
+}
+.stats .avatar-group {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 26px;
+    gap: 16px 14px;
+}
+.stats .avatars {
+    display: flex;
+}
+.stats .avatar-group .avatar {
+    width: 16.34px;
+    height: 16.34px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-left: -3.03px;
+}
+.stats div.avatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 450;
+    font-size: 7.26076px;
+    letter-spacing: -0.02em;
+    color: #ffffff;
+    background: #1f3bb1;
+}
+.stats .rowbot {
+    width: 985px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 110px;
+}
+.stats .rowbot .number {
+    font-weight: 600;
+    font-size: 64px;
+    color: #000000;
+}
+.stats .rowbot .information {
+    margin-top: 24px;
+    font-weight: 500;
+    font-size: 18px;
+    color: #7b8087;
+}
+/* ===============================================Subscription==================================== */
+.subscription {
+    margin-top: 90px;
+}
+.subscription .content {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 370px;
+    background: #063183;
+    border-radius: 20px;
+}
+.subscription .bg {
+    padding: 0 80px;
+    max-width: 100%;
+    width: 671px;
+}
+.subscription .bg .maintitle {
+    font-weight: 600;
+    font-size: 3.5rem;
+    line-height: 1;
+    color: #ffffff;
+}
+.subscription .bg .todo {
+    margin-top: 15px;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.88;
+    color: #ffffff;
+    opacity: 0.75;
+}
+.subscription .bg .subscription-btn {
+    display: inline-block;
+    min-width: 151px;
+    padding: 14px 43px 16px 42px;
+    margin-top: 20px;
+    border-radius: 12px;
+    background: #ffffff;
+    font-weight: 500;
+    font-size: 13px;
+    text-align: center;
+    color: #002366;
+}
+.subscription .bg .subscription-btn:hover {
+    background: red;
+    color: #fff;
+}
+.subscription .descimage {
+    position: absolute;
+    bottom: 0;
+    right: 221px;
+}
+/* =====================================Footer===================================== */
+.footer {
+    margin-top: 55px;
+    padding: 50px 0 58px 0;
+}
+.footer .row {
+    display: flex;
+    justify-content: space-between;
+}
+.footer .up {
+    gap: 187px;
+}
+.footer .row .title {
+    font-weight: 700;
+    font-size: 20px;
+    color: #1c1c1d;
+}
+.footer .row .list {
+    margin-top: 41px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 2.6;
+    color: #7a7a7e;
+}
+.footer .row .desc {
+    line-height: 1.75;
+}
+.footer .up .icon {
+    display: inline-block;
+    text-align: center;
+    width: 29px;
+    height: 29px;
+    line-height: 1.8;
+    margin-left: 16px;
+    margin-top: 40px;
+    border-radius: 7px;
+    background: #f9f9f9;
+}
+.footer .up .fb {
+    margin-left: auto;
+}
+.footer .down {
+    margin-top: 81px;
+}
+.footer .down .rights {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #c2c2c2;
+}
