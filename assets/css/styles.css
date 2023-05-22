@@ -8,6 +8,10 @@
     --line-clamp-Title: 1;
     --line-clamp-Para: 3;
 }
+html,
+body {
+    scroll-behavior: smooth;
+}
 /* cỡ chữ mặc định là 16px nên 62,5%=10px */
 html {
     font-size: 62.5%;
@@ -57,11 +61,12 @@ a {
 }
 /* ==================Header========================= */
 .hero-wrap {
+    height: calc(100vh - 90px);
     display: flex;
     flex-direction: column;
+    justify-content: center;
     background: #e6f0ff;
     position: relative;
-    padding-bottom: 157px;
 }
 .fixed-header {
     background: #e6f0ff;
@@ -102,25 +107,24 @@ a {
 .navbar .menu a:hover {
     text-decoration: underline;
 }
-.hero .info {
-    margin-top: 131px;
+.hero-wrap .info {
     width: 55%;
 }
-.hero .sub-title {
+.hero-wrap .sub-title {
     font-weight: 500;
     font-size: 18px;
     line-height: 1.5;
     letter-spacing: 0.01em;
     color: #687690;
 }
-.hero .title {
+.hero-wrap .title {
     margin-top: 8px;
     font-weight: 700;
     font-size: 6.2rem;
     line-height: 1.19;
     color: #000336;
 }
-.hero .descript {
+.hero-wrap .descript {
     margin-top: 30px;
     font-weight: 400;
     font-size: 18px;
@@ -132,7 +136,7 @@ a {
     min-width: 170px;
     font-size: 1.3rem;
 }
-.hero img {
+.hero-wrap img {
     position: absolute;
     bottom: 0;
     right: calc((100vw - 1110px) / 2 - 100px);
@@ -513,6 +517,7 @@ a {
     font-size: 20px;
     color: #1c1c1d;
 }
+.footer .row .list a,
 .footer .row .list {
     margin-top: 41px;
     font-weight: 400;
