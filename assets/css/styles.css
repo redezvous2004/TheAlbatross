@@ -49,19 +49,19 @@ a {
 }
 .line-clampofTitle {
     display: -webkit-box;
-    -webkit-line-clamp: vat(--line-clamp-Title);
+    -webkit-line-clamp: var(--line-clamp-Title);
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
 .line-clampofPara {
     display: -webkit-box;
-    -webkit-line-clamp: vat(--line-clamp-Para);
+    -webkit-line-clamp: var(--line-clamp-Para);
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
 /* ==================Header========================= */
 .hero-wrap {
-    height: calc(100vh - 90px);
+    height: calc(100vh - 116px);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -541,6 +541,9 @@ a {
     margin-top: 40px;
     border-radius: 7px;
     background: #f9f9f9;
+}
+.footer .up .icon:hover {
+    opacity: 0.85;
 }
 .footer .down {
     margin-top: 81px;
